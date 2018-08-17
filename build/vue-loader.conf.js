@@ -12,6 +12,7 @@ module.exports = {
     extract: isProduction
   }),
   cssSourceMap: sourceMapEnabled,
+  usePostcss: true,  // 使用px转vw
   cacheBusting: config.dev.cacheBusting,
   transformToRequire: {
     video: ['src', 'poster'],
