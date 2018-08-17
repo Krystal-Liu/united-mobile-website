@@ -1,19 +1,20 @@
 <template>
-    <div id="unlayer">12312313</div>
+    <div id="unlayer">
+        <div id="banner">
+            <img src="../../assets/images/unlayer/banner2.png" alt="unlayer">
+        </div>
+    </div>
 </template>
 
 <script>
 export default {
+    name: 'unlayer'
     
 }
 </script>
 
 <style lang="scss" scoped>
-    #unlayer {
-        width: 120px;
-        height: 120px;
-        background-color: red;
-        font-size: 18px;
-        border: 1px solid black;
+    #banner {
+        position: relative
     }
 </style>
