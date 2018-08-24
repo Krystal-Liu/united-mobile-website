@@ -11,7 +11,10 @@ export default {
 </script>
 
 <style>
-  body, ul, li {
+  html {
+    font-family: MicrosoftYaHei;
+  }
+  body, ul, li, p {
     padding: 0;
     margin: 0;
   }
