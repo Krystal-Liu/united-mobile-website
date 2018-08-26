@@ -6,7 +6,7 @@
                     <p class="ignore">合作分层管理系统</br>解决方案</p>
                 </div>
                 <div id="banner-img-box">
-                    <img src="../../assets/images/layer/banner.png" alt="">
+                    <img src="https://image-1256648750.file.myqcloud.com/mobile/banner.d656242.png" alt="">
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@
             </ul>
         </div>
         <div id="core-technology">
-            <img src="../../assets/images/layer/core-technolog-point-mo.png" alt="">
+            <img src="https://image-1256648750.file.myqcloud.com/mobile/core-technolog-point-mo.d282f1c.png" alt="">
             <ul id="core-technology-list">
                 <li>
                     <div class="core-technology-li-index">1</div>
@@ -51,7 +51,7 @@
         </div>
         <div id="architecture-diagram">
             <p class="ignore">系统整体功能构架图</p>
-            <img src="../../assets/images/layer/architecture-diagram.png" alt="">
+            <img src="https://image-1256648750.file.myqcloud.com/mobile/architecture-diagram.e0875dc.png" alt="">
         </div>
         <div id="main-function-produce">
             <p class="main-function-produce-title ignore">主要功能介绍</p>
@@ -98,12 +98,16 @@
             </ul>
         </div>
         <p id="footer-word"><span class="ignore">已被多省运营商投入生产使用</span></p>
+        <footers></footers>
     </div>
 </template>
 
 <script>
+import Footers from '../common/Footers'
 export default {
-    
+    components: {
+        Footers
+    }
 }
 </script>
 
@@ -343,6 +347,7 @@ export default {
     #footer-word {
         height: 120px;
         margin-top: 68px;
+        margin-bottom: 57px;
         line-height: 120px;
         font-weight: lighter;
         text-align: center;

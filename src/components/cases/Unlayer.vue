@@ -6,7 +6,7 @@
                     <p class="ignore">UNlayer</br>高性能安全接入平台</p>
                 </div>
                 <div id="banner-img-box">
-                    <img src="../../assets/images/unlayer/banner.png" alt="">
+                    <img src="https://image-1256648750.file.myqcloud.com/mobile/banner.14a32fa.png" alt="">
                 </div>
             </div>
         </div>
@@ -108,15 +108,18 @@
             </div>
         </div>
         <div id="zhannue-partner">
-            <img src="../../assets/images/unlayer/partner-yunnan.png" alt="">
+            <img src="https://image-1256648750.file.myqcloud.com/mobile/partner-yunnan.009f547.png" alt="">
         </div>
+        <footers></footers>
     </div>
 </template>
 
 <script>
+import Footers from '../common/Footers'
 export default {
-    name: 'unlayer'
-    
+    components: {
+        Footers
+    }
 }
 </script>
 
@@ -183,16 +186,16 @@ export default {
                 background-repeat: no-repeat;
             }
             .load {
-                background-image: url('../../assets/images/unlayer/load-balancing.png');
+                background-image: url('https://image-1256648750.file.myqcloud.com/mobile/load-balancing.e1e4153.png');
             }
             .operate {
-                background-image: url('../../assets/images/unlayer/operation.png');
+                background-image: url('https://image-1256648750.file.myqcloud.com/mobile/operation.e91aceb.png');
             }
             .safety {
-                background-image: url('../../assets/images/unlayer/safety-protection.png');
+                background-image: url('https://image-1256648750.file.myqcloud.com/mobile/safety-protection.51853cb.png');
             }
             .protocol {
-                background-image: url('../../assets/images/unlayer/protocol-control.png');
+                background-image: url('https://image-1256648750.file.myqcloud.com/mobile/protocol-control.e6c05cf.png');
             }
             .function-li-details {
                 float: left;
@@ -237,10 +240,10 @@ export default {
                 background-size: contain;
             }
             .case-icon-first {
-                background-image: url('../../assets/images/unlayer/m-region.png');
+                background-image: url('https://image-1256648750.file.myqcloud.com/mobile/m-region.96267fa.png');
             }
             .case-icon-third {
-                background-image: url('../../assets/images/unlayer/cq-cqtv.png');
+                background-image: url('https://image-1256648750.file.myqcloud.com/mobile/cq-cqtv.f4d71d8.png');
             }
             .case-right-icon {
                 width:  351px;
@@ -248,7 +251,7 @@ export default {
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
-                background-image: url('../../assets/images/unlayer/crm-region.png');
+                background-image: url('https://image-1256648750.file.myqcloud.com/mobile/crm-region.2b0af11.png');
             }
             .case-li-left-details {
                 width: 580px;
@@ -301,7 +304,7 @@ export default {
                 height: 294px;
                 top: 110px;
                 right: 50px;
-                background-image: url('../../assets/images/unlayer/map.png');
+                background-image: url('https://image-1256648750.file.myqcloud.com/mobile/map.bbcc9ca.png');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
@@ -371,7 +374,7 @@ export default {
                     height: 146px;
                     margin-top: 32px;
                     margin-bottom: 11px;
-                    background-image: url('../../assets/images/unlayer/guangdian.png');
+                    background-image: url('https://image-1256648750.file.myqcloud.com/mobile/guangdian.0c4a3f0.png');
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: contain;
@@ -383,7 +386,7 @@ export default {
                     width: 100%;
                     height: 164px;
                     margin-top: 26px;
-                    background-image: url('../../assets/images/unlayer/dianxin.png');
+                    background-image: url('https://image-1256648750.file.myqcloud.com/mobile/dianxin.308e640.png');
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: contain;
@@ -395,6 +398,7 @@ export default {
     
     #zhannue-partner {
         img {
+            display: block;
             width: 100%;
         }
     }

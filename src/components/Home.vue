@@ -6,7 +6,7 @@
             <ul> 
                 <router-link :to="{name: 'Unlayer'}" tag="li">
                     <div class="case-img">
-                        <img src="../assets/images/unlayerBack.png"/>
+                        <img src="https://image-1256648750.file.myqcloud.com/mobile/unlayerBack.dcf478e.png"/>
                     </div>
                     <div class="content">
                         <p class="cases-title">unlayer高性能负载接入平台</p>
@@ -15,7 +15,7 @@
                 </router-link>
                 <router-link :to="{name: 'Onetouch'}" tag="li">
                     <div class="case-img">
-                        <img src="../assets/images/oneTouchBack.png"/>
+                        <img src="https://image-1256648750.file.myqcloud.com/mobile/oneTouchBack.5803613.png"/>
                     </div>
                     <div class="content">
                         <p class="cases-title">终端一键式解决方案</p>
@@ -30,7 +30,7 @@
                 <li>
                     <a target="_blank" href="http://www.chinatelecom.com.cn">
                         <div class="partner-img">
-                            <img src="../assets/images/telecom.png"/>
+                            <img src="https://image-1256648750.file.myqcloud.com/mobile/telecom.ac39967.png"/>
                         </div>
                         <p class="partner-title">中国电信</p>
                     </a>
@@ -38,7 +38,7 @@
                 <li>
                     <a target="_blank" href="http://www.cqkcy.com">
                         <div class="partner-img">
-                            <img src="../assets/images/kanceyuan.png"/>
+                            <img src="https://image-1256648750.file.myqcloud.com/mobile/kanceyuan.00cf48f.png"/>
                         </div>
                         <p class="partner-title">重庆市勘测院</p>
                     </a>
@@ -46,7 +46,7 @@
                 <li>
                    <a target="_blank" href="http://www.cqbntv.cn/">
                         <div class="partner-img">
-                            <img src="../assets/images/ctv.png"/>
+                            <img src="https://image-1256648750.file.myqcloud.com/mobile/ctv.ca74375.png"/>
                         </div>
                         <p class="partner-title">重庆广电集团</p>
                     </a> 
@@ -56,7 +56,7 @@
         <div class="accompany">
             <p class="accom-title">公司概况</p>
             <router-link :to="{name: 'Introduce'}" tag="div">
-                <img src="../assets/images/accompany.png"/>
+                <img src="https://image-1256648750.file.myqcloud.com/mobile/accompany.987e918.png"/>
             </router-link>
             <div class="introduce">
                 <p class="accompany-title">关于我们</p>
@@ -68,30 +68,19 @@
         <div class="news">
             <p class="title">公司新闻</p>
             <ul> 
-                <router-link :to="{name: 'News'}" tag="li">
+                <li v-for="(item,index) in items" @click="jumpDetails(item)">
                     <div class="news-img">
-                        <img src="../assets/images/notice.png"/>
+                        <img :src="item.img"/>
                     </div>
                     <div class="content">
-                        <p class="news-title">新闻一</p>
-                        <p class="news-content">unlayer高性能负载安全接入平台整合数据中心资源，保证应用
-                            高可用</p>
+                        <p class="news-content" v-html="item.markdown"></p>
+                        <p class="content-list-li-time">{{changeTime(item.time)}}</p>
                     </div>
-                </router-link>
-                <router-link :to="{name: 'News'}" tag="li">
-                    <div class="news-img">
-                        <img src="../assets/images/news.png"/>
-                    </div>
-                    <div class="content">
-                        <p class="news-title">新闻二</p>
-                        <p class="news-content">一键式服务平台能实现对各类营业终端的统一资源监控等功能</p>
-                    </div>
-                </router-link>
+                </li>
             </ul>
             <router-link :to="{name: 'News'}">
                 <p class="find-more">查看更多</p>
             </router-link>
-            
         </div>
         <footers></footers>
     </div>
@@ -101,10 +90,54 @@
 <script>
 import Footers from './common/Footers.vue'
 import Slide from './common/Slide.vue'
+import {getNewsList} from '../api.js'
+import marked from 'marked'
 export default {
     name: 'home',
+    data() {
+        return {
+            items: []
+        }
+    },
     components: {
         Footers, Slide
+    },
+    methods: {
+        getList () {
+            let params = 1;  //取新闻列表的第一页的两条数据
+            getNewsList(params).then(res =>{
+                // console.log(res)
+                let arr = res.list.slice(0,2)
+                for (let i=0; i<arr.length;i++) {
+                    arr[i].markdown = this.breakWords(arr[i].markdown);
+                }
+                this.items = arr;
+            })
+        },
+        breakWords(markdown) {
+            // match返回的是一个数组
+            let html = marked(markdown).match(/<p[^>]*>(?:(?!<\/p>)[\s\S])*<\/p>/)[0];
+            let result = html.slice(0,45) + '...' + '</p>';
+            return result
+        },
+        jumpDetails(item) {
+            this.$router.push({
+                path: '/news/details',
+                query: {
+                    nid: item.nid
+                }
+            })
+        },
+        changeTime(timestamp) {
+            let date = new Date(timestamp);
+            let year = date.getFullYear();
+            let month = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1);
+            let day = date.getDate();
+            return year + '/' + month + '/'+day
+        }
+    },
+    mounted() {
+        this.getList();
     }
 }
 </script>
@@ -148,11 +181,6 @@ export default {
             float: right;
             width: 56%;
             cursor: pointer;
-            .cases-title {
-                margin: 0;
-                font-size: 40px;
-                font-weight: bold;
-            }
             .case-content {
                 font-size: 40px;
                 text-align: justify;
@@ -239,6 +267,7 @@ export default {
         overflow: hidden;
         padding-bottom: 6%;
         ul li {
+            position: relative;
             float: left;
             margin-top: 8%;
         }
@@ -254,10 +283,11 @@ export default {
             width: 54%;
             padding-right: 3%;
             cursor: pointer;
-            .news-title {
-                margin: 0;
-                font-size: 42px;
-                font-weight: bold;
+            .content-list-li-time {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                font-size: 32px;
             }
             .news-content {
                 font-size: 40px;

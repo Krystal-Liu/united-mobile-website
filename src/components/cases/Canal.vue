@@ -7,7 +7,7 @@
                     <p><span class="ignore">运营之巅 渠道为先</span></p>
                 </div>
                 <div id="banner-img-box">
-                    <img src="../../assets/images/canal/banner.png" alt="">
+                    <img src="https://image-1256648750.file.myqcloud.com/mobile/banner.e1c04c5.png" alt="">
                 </div>
             </div>
         </div>
@@ -103,12 +103,16 @@
             </ul>
         </div>
         <p id="footer-word"><span class="ignore">已被多省运营商投入生产使用</span></p>
+        <footers></footers>
     </div>
 </template>
 
 <script>
+import Footers from '../common/Footers'
 export default {
-    
+    components: {
+        Footers
+    }
 }
 </script>
 
@@ -265,6 +269,8 @@ export default {
 
     #footer-word {
         height: 120px;
+        margin-top: 26px;
+        margin-bottom: 30px;
         line-height: 120px;
         text-align: center;
         font-weight: lighter;

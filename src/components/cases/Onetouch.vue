@@ -6,7 +6,7 @@
                     <p class="ignore">终端一键式解决方案</p>
                 </div>
                 <div id="banner-img-box">
-                    <img src="../../assets/images/one-touch/banner.png" alt="">
+                    <img src="https://image-1256648750.file.myqcloud.com/mobile/banner.fa873dd.png" alt="">
                 </div>
             </div>
         </div>
@@ -78,12 +78,16 @@
                 <p id="p-last">已在四川电信，重庆电信，新疆电信，沈阳电信广泛使用</p>
             </div>
         </div>
+        <footers></footers>
     </div>
 </template>
 
 <script>
+import Footers from '../common/Footers'
 export default {
-    
+    components: {
+        Footers
+    }
 }
 </script>
 
@@ -283,7 +287,7 @@ export default {
         .platform-advantage-content {
             padding: 25px 76px 72px 76px;
             text-align: justify;
-            background-image: url('../../assets/images/one-touch/map.jpg');
+            background-image: url('https://image-1256648750.file.myqcloud.com/mobile/map.74ed441.jpg');
             background-repeat: no-repeat;
             background-position: 80% 88%;
             background-size: 527.8px 464.8px;

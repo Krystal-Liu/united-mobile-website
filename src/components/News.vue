@@ -14,7 +14,6 @@
                     <div id="content-list-li-ct">
                         <div class="content-list-li-details" v-html="item.markdown"></div>
                         <p class="content-list-li-time">{{changeTime(item.time)}}</p>
-                        <p></p>
                     </div>
                 </li>
             </ul>
@@ -26,7 +25,7 @@
 
 <script>
     import Paginations from './common/Paginations.vue'
-    import {getNewsList, getNewsDetail} from '../api.js'
+    import {getNewsList} from '../api.js'
     import marked from 'marked'
     export default {
         name: 'news',
@@ -76,7 +75,7 @@
             breakWords(markdown) {
                 // match返回的是一个数组
                 let html = marked(markdown).match(/<p[^>]*>(?:(?!<\/p>)[\s\S])*<\/p>/)[0];
-                let result = html.slice(0,60) + '...' + '</p>';
+                let result = html.slice(0,45) + '...' + '</p>';
                 return result
             }
         },
@@ -102,6 +101,7 @@
         width: 88.888%;
         margin: 0 auto;
         ul li {
+            position: relative;
             margin-top: 4.10%;
             overflow: hidden;
             cursor: pointer;
@@ -124,6 +124,7 @@
             #content-list-li-ct {
                 float: left;
                 width: 64%;
+                height: 100%;
                 margin-left: 5.56%;
                 .content-list-li-details {
                     font-size: 36px;
@@ -131,6 +132,9 @@
                     word-break: break-all;
                 }
                 .content-list-li-time {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
                     font-size: 32px;
                 }
             }

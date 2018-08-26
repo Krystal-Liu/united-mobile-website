@@ -25,27 +25,27 @@
                 slides: [
                     {
                         title: 'UNlayer高性能负载接入平台',
-                        src: require('../../assets/images/unlayer/banner.png'),
+                        src: 'https://image-1256648750.file.myqcloud.com/mobile/banner.14a32fa.png',
                         href: "/Unlayer"
                     },
                     {
                         title: '合作分成管理系统解决方案',
-                        src: require('../../assets/images/layer/banner.png'),
+                        src: 'https://image-1256648750.file.myqcloud.com/mobile/banner.d656242.png',
                         href: '/Layer'
                     },
                     {
                         title: '渠道支撑解决方案',
-                        src: require('../../assets/images/canal/banner.png'),
+                        src: 'https://image-1256648750.file.myqcloud.com/mobile/banner.e1c04c5.png',
                         href: '/Canal'
                     },
                     {
                         title: '终端一键式解决方案',
-                        src: require('../../assets/images/one-touch/banner.png'),
+                        src: 'https://image-1256648750.file.myqcloud.com/mobile/banner.fa873dd.png',
                         href: '/Onetouch'
                     },
                     {
                         title: '政企全项目管理解决方案',
-                        src: require('../../assets/images/government/banner.png'),
+                        src: 'https://image-1256648750.file.myqcloud.com/mobile/banner.0ff1884.png',
                         href: '/Government'
                     }
                 ]

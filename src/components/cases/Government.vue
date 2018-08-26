@@ -3,10 +3,10 @@
         <div id="banner-background">
             <div id="banner-box">
                 <div id="banner-left-word">
-                    <p class="ignore">政企全项目解决方案</p>
+                    <p class="ignore">政企全项目管理解决方案</p>
                 </div>
                 <div id="banner-img-box">
-                    <img src="../../assets/images/government/banner.png" alt="">
+                    <img src="https://image-1256648750.file.myqcloud.com/mobile/banner.0ff1884.png" alt="">
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
         </div>
         <div id="business-circulation">
             <h3 class="business-circulation-title">政企业务流转</h3>
-            <img src="../../assets/images/government/work-flow.png" alt="">
+            <img src="https://image-1256648750.file.myqcloud.com/mobile/work-flow.61fd7ac.png" alt="">
         </div>
         <div id="before-sale">
             <h3 class="sale-title">售前流程架构</h3>
@@ -72,7 +72,7 @@
         </div>
         <div id="sale">
             <h3 class="sale-title">售中流程架构</h3>
-            <img src="../../assets/images/government/sale-flow-mo.png" alt="">
+            <img src="https://image-1256648750.file.myqcloud.com/mobile/sale-flow-mo.2eeefb6.png" alt="">
         </div>
         <div id="after-sale">
             <h3 class="sale-title">售后流程架构</h3>
@@ -132,12 +132,16 @@
             </div>
         </div>
         <p id="footer-word"><span class="ignore">已被多省运营商投入生产使用</span></p>
+        <footers></footers>
     </div>
 </template>
 
 <script>
+import Footers from '../common/Footers'
 export default {
-    
+    components: {
+        Footers
+    }
 }
 </script>
 
@@ -201,7 +205,7 @@ export default {
             padding-top: 187px; 
             text-align: center;
             box-sizing: border-box;
-            background-image: url('../../assets/images/government/system-architecture.png');
+            background-image: url('https://image-1256648750.file.myqcloud.com/mobile/system-architecture.df1f560.png');
             background-size: 722px 446px;
             background-repeat: no-repeat;
             background-position: top center;
@@ -361,12 +365,13 @@ export default {
 
     #footer-word {
         height: 120px;
+        margin-bottom: 17px;
         line-height: 120px;
         font-size: 30px;
         text-align: center;
         font-weight: lighter;
         color: #ffffff;
-        background-color: #6396e0;
+        background-color: #456173;
         .ignore {
             font-size: 18px;
         }
