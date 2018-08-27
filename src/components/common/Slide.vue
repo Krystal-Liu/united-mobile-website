@@ -25,27 +25,27 @@
                 slides: [
                     {
                         title: 'UNlayer高性能负载接入平台',
-                        src: 'https://image-1256648750.file.myqcloud.com/mobile/banner.14a32fa.png',
+                        src: 'https://image-1256648750.file.myqcloud.com/mobile/banner.55b3a57.png',
                         href: "/Unlayer"
                     },
                     {
                         title: '合作分成管理系统解决方案',
-                        src: 'https://image-1256648750.file.myqcloud.com/mobile/banner.d656242.png',
+                        src: 'https://image-1256648750.file.myqcloud.com/mobile/banner.f530981.png',
                         href: '/Layer'
                     },
                     {
                         title: '渠道支撑解决方案',
-                        src: 'https://image-1256648750.file.myqcloud.com/mobile/banner.e1c04c5.png',
+                        src: 'https://image-1256648750.file.myqcloud.com/mobile/banner.04d130f.png',
                         href: '/Canal'
                     },
                     {
                         title: '终端一键式解决方案',
-                        src: 'https://image-1256648750.file.myqcloud.com/mobile/banner.fa873dd.png',
+                        src: 'https://image-1256648750.file.myqcloud.com/mobile/banner.9909ff9.png',
                         href: '/Onetouch'
                     },
                     {
                         title: '政企全项目管理解决方案',
-                        src: 'https://image-1256648750.file.myqcloud.com/mobile/banner.0ff1884.png',
+                        src: 'https://image-1256648750.file.myqcloud.com/mobile/banner.048720c.png',
                         href: '/Government'
                     }
                 ]
@@ -82,7 +82,7 @@
                     clear: both;
                 }
                 #banner-left-word {
-                    width: 530px;
+                    width: 560px;
                     p {
                         color: white;
                         line-height: 1.5;
@@ -104,8 +104,8 @@
                     }
                 }
                 #banner-img-box {
-                    width: 256px;
-                    margin-left: 100px;
+                    width: 380px;
+                    margin-left: 20px;
                     img {
                         width: 100%;
                     }

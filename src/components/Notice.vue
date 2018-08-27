@@ -13,15 +13,12 @@
                 </li>
             </ul>
         </div>
-        <paginations :page-index="currentPage" 
-        :total="count" 
-        :page-size="pageSize" 
-        @change="pageChange"></paginations>
+        <paginations :page-index = "currentPage" :total = "count" :page-size="pageSize" @change = "pageChange"></paginations>
     </div>
 </template>
 
 <script>
-import paginations from './common/paginations.vue'
+import Paginations from './common/paginations.vue'
 import {getNoticeList} from '../api.js'
 export default {
     name: 'notice',
@@ -39,7 +36,7 @@ export default {
         } 
     },
     components: {
-        paginations
+        Paginations
     },
     methods: {
         getList() {

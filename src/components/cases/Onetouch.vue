@@ -6,7 +6,7 @@
                     <p class="ignore">终端一键式解决方案</p>
                 </div>
                 <div id="banner-img-box">
-                    <img src="https://image-1256648750.file.myqcloud.com/mobile/banner.fa873dd.png" alt="">
+                    <img src="https://image-1256648750.file.myqcloud.com/mobile/banner.9909ff9.png" alt="">
                 </div>
             </div>
         </div>
@@ -107,7 +107,7 @@ export default {
                 clear: both;
             }
             #banner-left-word {
-                width: 610px;
+                width: 560px;
                 p {
                     color: white;
                     line-height: 1.5;
@@ -126,7 +126,7 @@ export default {
                 }
             }
             #banner-img-box {
-                width: 256px;
+                width: 380px;
                 margin-left: 20px;
                 img {
                     width: 100%;

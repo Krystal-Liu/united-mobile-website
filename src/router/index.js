@@ -46,7 +46,7 @@ export default new Router({
     {path: '/introduce', name: 'Introduce', component: Introduce},
     {path: '/news', name: 'News' , component: News},
     {path: '/notice', name: 'Notice' , component: Notice},
-    {path: '/news/details', name: 'Details',component: Details},
-    {path: '/notice/details', name: 'Details', component: Details}
+    {path: '/news/details', name: 'NewsDetails', component: Details},
+    {path: '/notice/details', name: 'NoticeDetails', component: Details}
   ]
 })

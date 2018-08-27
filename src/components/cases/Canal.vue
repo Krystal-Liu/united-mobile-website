@@ -7,7 +7,7 @@
                     <p><span class="ignore">运营之巅 渠道为先</span></p>
                 </div>
                 <div id="banner-img-box">
-                    <img src="https://image-1256648750.file.myqcloud.com/mobile/banner.e1c04c5.png" alt="">
+                    <img src="https://image-1256648750.file.myqcloud.com/mobile/banner.04d130f.png" alt="">
                 </div>
             </div>
         </div>
@@ -132,7 +132,7 @@ export default {
                 clear: both;
             }
             #banner-left-word {
-                width: 610px;
+                width: 560px;
                 p {
                     color: white;
                     line-height: 1.5;
@@ -151,7 +151,7 @@ export default {
                 }
             }
             #banner-img-box {
-                width: 256px;
+                width: 380px;
                 margin-left: 20px;
                 img {
                     width: 100%;

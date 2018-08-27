@@ -6,7 +6,7 @@
                     <p class="ignore">UNlayer</br>高性能安全接入平台</p>
                 </div>
                 <div id="banner-img-box">
-                    <img src="https://image-1256648750.file.myqcloud.com/mobile/banner.14a32fa.png" alt="">
+                    <img src="https://image-1256648750.file.myqcloud.com/mobile/banner.55b3a57.png" alt="">
                 </div>
             </div>
         </div>
@@ -139,7 +139,7 @@ export default {
                 clear: both;
             }
             #banner-left-word {
-                width: 610px;
+                width: 560px;
                 p {
                     color: white;
                     line-height: 1.5;
@@ -158,7 +158,7 @@ export default {
                 }
             }
             #banner-img-box {
-                width: 256px;
+                width: 380px;
                 margin-left: 20px;
                 img {
                     width: 100%;

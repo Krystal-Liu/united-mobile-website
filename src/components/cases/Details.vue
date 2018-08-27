@@ -1,7 +1,7 @@
 <template>
     <section>
         <div id="article" ref="content"></div>
-        <div class="back" @click="backForward"><Icon type="md-arrow-round-back"/></div>
+        <div class="back" @click="backForward"><i class="iconfont el-icon-ali-fanhui"></i></div>
     </section>
 </template>
 
@@ -74,10 +74,9 @@ export default {
         position: absolute;
         right: 13%;
         top: 0;
-    }
-    .ivu-icon {
-        font-size: 76px;
-        cursor: pointer;
+        i {
+            cursor: pointer;
+        }
     }
 
 </style>

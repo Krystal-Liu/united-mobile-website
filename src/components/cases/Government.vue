@@ -6,7 +6,7 @@
                     <p class="ignore">政企全项目管理解决方案</p>
                 </div>
                 <div id="banner-img-box">
-                    <img src="https://image-1256648750.file.myqcloud.com/mobile/banner.0ff1884.png" alt="">
+                    <img src="https://image-1256648750.file.myqcloud.com/mobile/banner.048720c.png" alt="">
                 </div>
             </div>
         </div>
@@ -164,7 +164,7 @@ export default {
                 clear: both;
             }
             #banner-left-word {
-                width: 610px;
+                width: 560px;
                 p {
                     font-size: 32px;
                     color: white;
@@ -185,7 +185,7 @@ export default {
                 }
             }
             #banner-img-box {
-                width: 256px;
+                width: 380px;
                 margin-left: 20px;
                 img {
                     width: 100%;

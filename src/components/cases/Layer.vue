@@ -6,7 +6,7 @@
                     <p class="ignore">合作分层管理系统</br>解决方案</p>
                 </div>
                 <div id="banner-img-box">
-                    <img src="https://image-1256648750.file.myqcloud.com/mobile/banner.d656242.png" alt="">
+                    <img src="https://image-1256648750.file.myqcloud.com/mobile/banner.f530981.png" alt="">
                 </div>
             </div>
         </div>
@@ -127,7 +127,7 @@ export default {
                 clear: both;
             }
             #banner-left-word {
-                width: 610px;
+                width: 560px;
                 p {
                     color: white;
                     line-height: 1.5;
@@ -146,7 +146,7 @@ export default {
                 }
             }
             #banner-img-box {
-                width: 256px;
+                width: 380px;
                 margin-left: 20px;
                 img {
                     width: 100%;

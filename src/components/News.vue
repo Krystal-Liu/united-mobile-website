@@ -18,13 +18,12 @@
                 </li>
             </ul>
         </div>
-        <paginations :page-index = "currentPage" :total = "count" :page-size="pageSize"
-        @change = "pageChange"></paginations>
+        <paginations :page-index = "currentPage" :total = "count" :page-size="pageSize" @change = "pageChange"></paginations>
     </div>
 </template>
 
 <script>
-    import Paginations from './common/Paginations.vue'
+    import Paginations from './common/paginations.vue'
     import {getNewsList} from '../api.js'
     import marked from 'marked'
     export default {
