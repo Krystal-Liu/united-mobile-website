@@ -5,12 +5,9 @@ import App from './App'
 import router from './router'
 import wcSwiper from 'wc-swiper'
 import 'wc-swiper/style.css'
-import iView from 'iview'
-import 'iview/dist/styles/iview.css'
-import './assets/icon/iconfont.css'
+
 
 Vue.use(wcSwiper);
-Vue.use(iView);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

@@ -8,6 +8,7 @@
 <script>
 import {getNewsDetail, getNoticeDetail} from '../../api.js'
 import marked from "marked"
+import '../../assets/icon/iconfont.css'
 export default {
     data() {
         return {

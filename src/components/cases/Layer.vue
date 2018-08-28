@@ -213,7 +213,7 @@ export default {
                 box-sizing: border-box;
                 float: left;
                 width: 314px;
-                height: 580px;
+                height: 620px;
                 margin-left: 30px;
                 padding: 102px 29px 0 29px;
                 box-shadow: 0px 15px 41px 9px rgba(84, 145, 109, 0.18);
@@ -306,7 +306,7 @@ export default {
                 .main-func-li-content {
                     position: relative;
                     width: inherit;
-                    height: 473px;
+                    height: 600px;
                     margin-top: 92px;
                     padding-top: 128px;
                     line-height: 2;

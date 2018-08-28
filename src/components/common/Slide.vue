@@ -6,7 +6,7 @@
                     <div id="banner-box">
                         <div id="banner-left-word">
                             <p class="ignore">{{ slide.title}}</p>
-                            <button>了解详情</button>
+                            <button><span class="ignore">了解详情</span></button>
                         </div>
                         <div id="banner-img-box">
                             <img :src="slide.src" alt="">
@@ -96,11 +96,16 @@
                         font-size: 20px;
                     }
                     button {
+                        display: block;
+                        width: 200px;
                         margin-top: 40px;
                         color: #ffffff;
                         outline: none;
                         background-color: #041123;
                         border: 1px solid #ffffff;
+                        .ignore {
+                            font-size: 12px;
+                        }
                     }
                 }
                 #banner-img-box {

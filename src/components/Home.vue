@@ -25,7 +25,7 @@
             </ul>
         </div>
         <div class="partner">
-            <p class="title">合作对象</p>
+            <p class="title">合作伙伴</p>
             <ul>
                 <li>
                     <a target="_blank" href="http://www.chinatelecom.com.cn">
